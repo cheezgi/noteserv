@@ -10,13 +10,16 @@ server='git@domain:/path/repo.git'
 #Change to your remote name
 remote_name='remote'
 
+#Change to your wiki directory
+wiki_dir="~/vimwiki"
+
 #################
 # END VARIABLES #
 #################
 
 dir=`pwd`
 
-cd ~/vimwiki
+cd $wiki_dir
 
 git init
 git add .
@@ -27,5 +30,8 @@ git push -u $remote_name master
 cd $dir
 
 cat upload_linux_osx | sed "s/__REMOTE_NAME__/$remote_name/g" > upload
+cat upload_linux_osx | sed "s/__WIKI_DIR__/$wiki_dir/g" > upload
+
 cat download_linux_osx | sed "s/__REMOTE_NAME__/$remote_name/g" > download
+cat download_linux_osx | sed "s/__WIKI_DIR__/$remote_name/g" > download
 
