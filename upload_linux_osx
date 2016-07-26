@@ -5,7 +5,7 @@
 ##################
 
 #Change to desired commit message, leave blank to open editor
-commit_msg=`Update $(date +'%a %F %I:%M')`
+commit_msg="Update $(date +'%a %F %I:%M')"
 
 #################
 # END VARIABLES #
