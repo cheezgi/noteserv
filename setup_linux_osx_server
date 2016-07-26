@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#########
+# SETUP #
+#########
+
+echo 'Adding user'
+adduser --system --shell /bin/bash \
+    --gecos 'git version control'  \
+    --group --home /home/git git
+
+echo 'Setting password'
+passwd git
+
+echo 'Creating git repo'
+su git -c "cd ~; mkdir vimwiki.git; cd vimwiki.git; git init --bare"
+

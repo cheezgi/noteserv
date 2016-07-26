@@ -1,0 +1,34 @@
+#!/bin/bash
+
+##################
+# USER VARIABLES #
+##################
+
+#Change to your git server details
+server='git@domain:/path/repo.git'
+
+#Change to your remote name
+remote_name='remote'
+
+#Change to desired commit message, leave blank to open editor
+commit_msg=`Update $(date +'%a %F %I:%M')`
+
+##################
+# PUSH TO SERVER #
+##################
+
+#Save current dir
+dir=`pwd`
+
+cd ~/vimwiki
+
+if [[ -z $commit_msg  ]]; then
+    git commit -a
+    git push -u $remote master
+else
+    git commit -am $commit_msg
+    git push -u $remote master
+fi
+
+cd $dir
+

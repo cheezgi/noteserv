@@ -1,0 +1,28 @@
+#!/bin/bash
+
+##################
+# USER VARIABLES #
+##################
+
+#Change to your git server details
+server='git@domain:/path/repo.git'
+
+#Change to your remote name
+remote_name='remote'
+
+#########
+# SETUP #
+#########
+
+dir=`pwd`
+
+cd ~/vimwiki
+
+git init
+git add .
+git commit -m "Initial commit - automatic by noteserv"
+git remote add $remote $server
+git push -u $remote master
+
+cd $dir
+

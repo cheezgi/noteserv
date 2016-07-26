@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+##################
+# USER VARIABLES #
+##################
+
+#Change to your git server details
+server='git@domain:/path/repo.git'
+
+#Change to your remote name
+remote_name='remote'
+
+############
+# DOWNLOAD #
+############
+
+dir=`pwd`
+
+git pull $remote master
+
+
