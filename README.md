@@ -19,14 +19,14 @@ know where the files are stored.
 Before editing, sync your notes (to avoid merge conflicts):
 
 ```
-$ download_linux_osx # you can rename this to whatever
+$ download
 ```
 
 Then, go ahead and edit your notes. When you are finished writing, push your
 edits to the server:
 
 ```
-$ upload_linux_osx
+$ upload
 ```
 
 ##setup
@@ -79,4 +79,20 @@ Now you are able to run the client setup script:
 ```
 $ setup_linux_osx_client
 ```
+
+This script will configure the correct client scripts and create files
+`download` and `upload`. Make these scripts executable and move them to a
+place on your path, and you're ready to edit!
+
+
+##contributing
+
+Contributing is very much appreciated. Create an issue with a pull request and
+I'll look into it.
+
+Testing is also appreciated. I don't have quite enough devices to take into
+account all the variables needed to make sure this works for every platform,
+so any sort of testing would be helpful.
+
+Thanks!
 
