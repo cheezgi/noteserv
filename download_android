@@ -1,14 +1,15 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-######################
-# No changes to make #
-######################
+##########################################################
+# No changes to make. Please only change the setup file! #
+##########################################################
 
 dir=`pwd`
 
 remote_name='__REMOTE_NAME__'
+wiki_dir='__WIKI_DIR__'
 
-cd ~/vimwiki
+cd $wiki_dir
 git pull $remote_name master
 
 cd $dir

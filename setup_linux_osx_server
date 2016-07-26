@@ -4,22 +4,22 @@
 # USER VARIABLES #
 ##################
 
-#Make sure this matches the setup file!
+#Make sure this matches the client setup file!
 repo_name='vimwiki.git'
 
 #################
 # END VARIABLES #
 #################
 
-echo 'Adding user'
+echo "Adding user \"git\"\n"
 adduser --system --shell /bin/bash \
     --gecos 'git version control'  \
     --group --home /home/git git
 
-echo 'Setting password'
+echo "Setting password for \"git\"\n"
 passwd git
 
-echo 'Creating git repo'
+echo "Creating git repo in \"$repo_name\" as user \"git\""
 su git -c "cd ~; mkdir $repo_name; cd $repo_name; git init --bare"
 
 echo 'Done! Make sure you set up the client setup file with the same'
