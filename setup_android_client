@@ -29,7 +29,7 @@ git push -u $remote_name master
 
 cd $dir
 
-cat upload_android | sed "s/__REMOTE_NAME__/$remote_name/g;s/__WIKI_DIR__/$wiki_dir/g" > upload
+cat upload_android | sed "s/__REMOTE_NAME__/$remote_name/g;s|__WIKI_DIR__|$wiki_dir|g" > upload
 
-cat download_android | sed "s/__REMOTE_NAME__/$remote_name/g;s/__WIKI_DIR__/$wiki_dir/g" > download
+cat download_android | sed "s/__REMOTE_NAME__/$remote_name/g;s|__WIKI_DIR__|$wiki_dir|g" > download
 
