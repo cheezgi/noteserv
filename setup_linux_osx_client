@@ -24,8 +24,8 @@ git commit -m "Initial commit - automatic by noteserv"
 git remote add $remote_name $server
 git push -u $remote_name master
 
+cd $dir
+
 cat upload_linux_osx | sed "s/__REMOTE_NAME__/$remote_name/g" > upload
 cat download_linux_osx | sed "s/__REMOTE_NAME__/$remote_name/g" > download
-
-cd $dir
 
