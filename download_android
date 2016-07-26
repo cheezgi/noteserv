@@ -1,17 +1,12 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-##################
-# USER VARIABLES #
-##################
-
-#Change to your remote name
-remote_name='remote'
-
-#################
-# END VARIABLES #
-#################
+######################
+# No changes to make #
+######################
 
 dir=`pwd`
+
+remote_name='__REMOTE_NAME__'
 
 cd ~/vimwiki
 git pull $remote master

@@ -28,6 +28,10 @@ $ upload_linux_osx
 
 ###server
 
+*Note: Keep in mind that the Android client setup requires the use of Termux
+as your terminal emulator. I strongly recommend the pro version of this app
+to support the awesome dev.*
+
 The server setup must come first for `noteserv`. Install ssh and git if you
 haven't already. The package names may vary depending on your package manager
 or operating system.
@@ -71,4 +75,5 @@ Now you are able to run the client setup script:
 $ setup_linux_osx_client
 ```
 
-You're all done! Read the usage section above to learn more.
+
+
