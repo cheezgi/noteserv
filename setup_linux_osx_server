@@ -1,8 +1,10 @@
 #!/bin/bash
 
-#########
+#Nothing here to modify
+
+#################
 # SETUP #
-#########
+#################
 
 echo 'Adding user'
 adduser --system --shell /bin/bash \

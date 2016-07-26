@@ -10,9 +10,9 @@ server='git@domain:/path/repo.git'
 #Change to your remote name
 remote_name='remote'
 
-#########
-# SETUP #
-#########
+#################
+# END VARIABLES #
+#################
 
 dir=`pwd`
 

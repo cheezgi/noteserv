@@ -4,18 +4,17 @@
 # USER VARIABLES #
 ##################
 
-#Change to your git server details
-server='git@domain:/path/repo.git'
-
 #Change to your remote name
 remote_name='remote'
 
-############
-# DOWNLOAD #
-############
+#################
+# END VARIABLES #
+#################
 
 dir=`pwd`
 
+cd ~/vimwiki
 git pull $remote master
 
+cd $dir
 

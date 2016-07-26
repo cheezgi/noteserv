@@ -10,9 +10,9 @@ remote_name='remote'
 #Change to desired commit message, leave blank to open editor
 commit_msg="Update $(date +'%a %F %I:%M')"
 
-##################
-# PUSH TO SERVER #
-##################
+#################
+# END VARIABLES #
+#################
 
 #Save current dir
 dir=`pwd`
