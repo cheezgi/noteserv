@@ -9,7 +9,7 @@ dir=`pwd`
 remote_name='__REMOTE_NAME__'
 
 cd ~/vimwiki
-git pull $remote master
+git pull $remote_name master
 
 cd $dir
 

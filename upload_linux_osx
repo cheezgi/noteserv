@@ -20,10 +20,10 @@ remote_name='__REMOTE_NAME__'
 
 if [[ -z $commit_msg  ]]; then
     git commit -a
-    git push -u $remote master
+    git push -u $remote_name master
 else
     git commit -am $commit_msg
-    git push -u $remote master
+    git push -u $remote_name master
 fi
 
 cd $dir
