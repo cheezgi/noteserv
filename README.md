@@ -9,6 +9,11 @@ When I fould Vimwiki, I really liked how you could organize your notes however
 you wanted. However, typical file sharing solutions like Dropbox were overkill
 for something this simple.
 
+You are also able to use other note/wiki editor plugins like
+[Org mode](http://orgmode.org) for Emacs or
+[vim-orgmode](https://github.com/jceb/vim-orgmode) for Vim, provided that you
+know where the files are stored.
+
 ##usage
 
 Before editing, sync your notes (to avoid merge conflicts):
@@ -74,6 +79,4 @@ Now you are able to run the client setup script:
 ```
 $ setup_linux_osx_client
 ```
-
-
 
